@@ -41,12 +41,13 @@ nav ul {
 
 /* Index */
 .d-item {
-    height: 700px;
+    height: 600px;
 }
 
 .d-img {
     height: 100%;
     object-fit: cover;
+    
 }
 
 .carousel-caption {
@@ -56,6 +57,7 @@ nav ul {
     flex-wrap: wrap;
     flex-direction: column;
 }
+
 
 .container-promociones {
     width: 100%;
@@ -121,6 +123,7 @@ nav ul {
     color: black;
     margin-top: 1em;
 }
+
 
 /* Estilos para pantallas grandes */
 @media only screen and (min-width: 768px) {
@@ -564,6 +567,5 @@ input::placeholder, textarea::placeholder {
 footer {
     background-color: lightslategray;
     padding: 2em 0;
-    
 }
 
