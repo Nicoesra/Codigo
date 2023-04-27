@@ -86,32 +86,32 @@ nav ul {
 }
 
 
-.uno {
+.primero {
     grid-area: uno;
     
 }
 
-.dos {
+.segundo {
     grid-area: dos;
     
 }
 
-.tres {
+.tercero {
     grid-area: tres;
     
 }
 
-.cuatro {
+.cuarto {
     grid-area: cuatro;
     
 }
 
-.cinco {
+.quinto {
     grid-area: cinco;
     
 }
 
-.seis {
+.sexto {
     grid-area: seis;
     
 }
