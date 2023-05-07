@@ -1,0 +1,127 @@
+
+
+/* Index */
+.d-item {
+    height: 600px;
+}
+
+.d-img {
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+.carousel-caption {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+
+.container-promociones {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 500px);
+    
+    
+    grid-template-areas: 
+    'uno dos tres'
+    'cuatro cinco seis'
+    ;
+}
+
+.items-promociones{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 5px;
+}
+
+.item-text {
+    margin: 20px;
+}
+
+
+.primero {
+    grid-area: uno;
+    
+}
+
+.segundo {
+    grid-area: dos;
+    
+}
+
+.tercero {
+    grid-area: tres;
+    
+}
+
+.cuarto {
+    grid-area: cuatro;
+    
+}
+
+.quinto {
+    grid-area: cinco;
+    
+}
+
+.sexto {
+    grid-area: seis;
+    
+}
+
+.title-promociones {
+    display: flex;
+    justify-content: center;
+    background-color: lightslategray;
+    color: black;
+    margin-top: 1em;
+}
+
+
+/* Estilos para pantallas grandes */
+@media only screen and (min-width: 768px) {
+    .container-promociones {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, 30em);
+      grid-template-areas: 
+      'uno dos tres'
+      'cuatro cinco seis';
+    }
+  }
+  
+  /* Estilos para pantallas medianas */
+  @media only screen and (min-width: 480px) and (max-width: 767px) {
+    .container-promociones {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, 30em);
+      grid-template-areas: 
+      'uno dos'
+      'tres cuatro'
+      'cinco seis';
+    }
+  }
+  
+  /* Estilos para pantallas pequeñas */
+  @media only screen and (max-width: 479px) {
+    .container-promociones {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(6, 30em);
+      grid-template-areas: 
+      'uno'
+      'dos'
+      'tres'
+      'cuatro'
+      'cinco'
+      'seis';
+    }
+  }
+
+/* Fin Index */

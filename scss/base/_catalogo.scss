@@ -1,0 +1,108 @@
+
+/* Catalogo */
+.title-catalogo {
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+  }
+  
+  .container-catalogo {
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(4, 30em);
+      
+      
+      grid-template-areas: 
+      'uno dos tres cuatro'
+      'cinco seis siete ocho'
+      'nueve diez once doce'
+      'trece catorce quince dieciseis'
+      ;
+  }
+  
+  .items-catalogo{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      flex-wrap: wrap;
+      margin: 5px;
+  }
+  
+  .items-catalogo {
+      margin: 1em;
+  }
+  
+  
+  .uno {
+      grid-area: uno;
+      
+  }
+  
+  .dos {
+      grid-area: dos;
+      
+  }
+  
+  .tres {
+      grid-area: tres;
+     
+  }
+  
+  .cuatro {
+      grid-area: cuatro;
+      
+  }
+  
+  .cinco {
+      grid-area: cinco;
+      
+  }
+  
+  .seis {
+      grid-area: seis;
+      
+  }
+  
+  .siete {
+    grid-area: siete;
+  }
+  
+  .ocho {
+    grid-area: ocho;
+  }
+  
+  .nueve {
+    grid-area: nueve;
+  }
+  
+  .diez {
+    grid-area: diez;
+  }
+  
+  .once {
+    grid-area: once;
+  }
+  
+  .doce {
+    grid-area: doce;
+  }
+  
+  .trece {
+    grid-area: trece;
+  }
+  
+  .catorce{
+    grid-area: catorce;
+  }
+  
+  .quince {
+    grid-area: quince;
+  
+  }
+  
+  .dieciseis {
+    grid-area: dieciseis;
+  }
+/* Fin Catalogo */

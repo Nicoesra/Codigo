@@ -1,0 +1,22 @@
+
+header {
+    background-color: lightslategray;
+    padding: 2em;
+}
+
+nav ul li a {
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+    padding: 1em;
+}
+
+body {
+    background-color: white;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
