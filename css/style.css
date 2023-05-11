@@ -30,6 +30,15 @@
   grid-template-areas: "uno dos tres" "cuatro cinco seis";
 }
 
+.items-promociones img {
+  width: 100%;
+  height: 300px;
+}
+
+.items-promociones:hover img {
+  transform: scale(1);
+}
+
 .items-promociones {
   display: flex;
   justify-content: center;
@@ -37,9 +46,14 @@
   flex-direction: column;
   flex-wrap: wrap;
   margin: 5px;
+  border-radius: 10px;
 }
 
-.item-text {
+.items-promociones:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.price {
   margin: 20px;
 }
 
@@ -122,6 +136,16 @@
   flex-direction: column;
   flex-wrap: wrap;
   margin: 5px;
+  border-radius: 10px;
+}
+
+.items-catalogo img {
+  width: 100%;
+  height: 300px;
+}
+
+.items-catalogo:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 .items-catalogo {
