@@ -34,12 +34,16 @@
 }
 
 .items-promociones img {
-    width: 100%;
     height: 300px;
+    transition: all .5s;
+}
+
+.items-promociones figure {
+    overflow: hidden;
 }
 
 .items-promociones:hover img {
-    transform: scale(1);
+    transform: scale(1.1);
 }
 
 
