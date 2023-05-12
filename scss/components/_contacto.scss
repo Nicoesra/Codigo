@@ -74,18 +74,41 @@ input::placeholder, textarea::placeholder {
     background-color: #50E04B;
 }
 
-@media(max-width: 991px) {
-    
-    body {
-        padding: 30px;
-    }
+/* Media queries */
 
+@media (max-width: 767px) {
     form {
-        padding: 50px 30px;
-        width: 100%;
+      width: 100%;
+      max-width: 400px;
     }
-
-    .put {
-        padding: 15px;
+  }
+  
+  @media (max-width: 576px) {
+    form {
+      padding: 30px;
     }
-}
+  }
+  
+  @media (max-width: 400px) {
+    form {
+      padding: 20px;
+    }
+  
+    .title-contacto {
+      font-size: 30px;
+    }
+  
+    label {
+      font-size: 14px;
+    }
+  
+    input,
+    textarea {
+      padding: 15px 20px;
+      font-size: 14px;
+    }
+  
+    .btn {
+      font-size: 14px;
+    }
+  }

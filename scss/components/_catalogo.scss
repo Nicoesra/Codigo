@@ -17,7 +17,6 @@
       'uno dos tres cuatro'
       'cinco seis siete ocho'
       'nueve diez once doce'
-      'trece catorce quince dieciseis'
       ;
   }
   
@@ -106,20 +105,32 @@
     grid-area: doce;
   }
   
-  .trece {
-    grid-area: trece;
+  @media screen and (max-width: 768px) {
+    .container-catalogo {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(4, 30em);
+    }
   }
+
   
-  .catorce{
-    grid-area: catorce;
+@media screen and (max-width: 1200px) {
+  .container-catalogo {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 30em);
   }
-  
-  .quince {
-    grid-area: quince;
-  
+}
+
+@media screen and (max-width: 992px) {
+  .container-catalogo {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, 30em);
   }
-  
-  .dieciseis {
-    grid-area: dieciseis;
+}
+
+@media screen and (max-width: 576px) {
+  .container-catalogo {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(12, 30em);
   }
-/* Fin Catalogo */
+}
+  

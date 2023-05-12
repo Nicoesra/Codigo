@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   padding: 0;
   margin: 0;
@@ -89,31 +88,82 @@
   margin-top: 1em;
 }
 
-/* Estilos para pantallas grandes */
-@media only screen and (min-width: 768px) {
-  .container-promociones {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 30em);
-    grid-template-areas: "uno dos tres" "cuatro cinco seis";
+@media (min-width: 1200px) {
+  header {
+    padding: 2em 5em;
+  }
+  .d-item {
+    height: 800px;
+  }
+  .items-promociones img {
+    height: 400px;
+  }
+  .price {
+    font-size: 16px;
+  }
+  .boton {
+    padding: 15px 30px;
+    font-size: 16px;
+  }
+  footer {
+    padding: 2em 5em;
   }
 }
 /* Estilos para pantallas medianas */
-@media only screen and (min-width: 480px) and (max-width: 767px) {
-  .container-promociones {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 30em);
-    grid-template-areas: "uno dos" "tres cuatro" "cinco seis";
+@media (max-width: 1199px) and (min-width: 768px) {
+  header {
+    padding: 2em 3em;
   }
 }
-/* Estilos para pantallas pequeñas */
-@media only screen and (max-width: 479px) {
-  .container-promociones {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(6, 30em);
-    grid-template-areas: "uno" "dos" "tres" "cuatro" "cinco" "seis";
+@media (max-width: 767px) {
+  header {
+    padding: 1em;
+  }
+  nav ul li a {
+    padding: 0.5em;
+  }
+  .d-item {
+    height: 400px;
+  }
+  .items-promociones img {
+    height: 200px;
+  }
+  .price {
+    font-size: 8px;
+  }
+  .boton {
+    padding: 10px 20px;
+    font-size: 8px;
+  }
+  footer {
+    padding: 1em;
   }
 }
-/* Fin Index */
+@media (max-width: 480px) {
+  header {
+    padding: 0.5em;
+  }
+  nav ul li a {
+    padding: 0.3em;
+    font-size: 12px;
+  }
+  .d-item {
+    height: 300px;
+  }
+  .items-promociones img {
+    height: 150px;
+  }
+  .price {
+    font-size: 6px;
+  }
+  .boton {
+    padding: 8px 15px;
+    font-size: 6px;
+  }
+  footer {
+    padding: 0.5em;
+  }
+}
 /* Catalogo */
 .title-catalogo {
   display: flex;
@@ -126,7 +176,7 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(3, 30em);
-  grid-template-areas: "uno dos tres cuatro" "cinco seis siete ocho" "nueve diez once doce" "trece catorce quince dieciseis";
+  grid-template-areas: "uno dos tres cuatro" "cinco seis siete ocho" "nueve diez once doce";
 }
 
 .items-catalogo {
@@ -208,23 +258,30 @@
   grid-area: doce;
 }
 
-.trece {
-  grid-area: trece;
+@media screen and (max-width: 768px) {
+  .container-catalogo {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 30em);
+  }
 }
-
-.catorce {
-  grid-area: catorce;
+@media screen and (max-width: 1200px) {
+  .container-catalogo {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 30em);
+  }
 }
-
-.quince {
-  grid-area: quince;
+@media screen and (max-width: 992px) {
+  .container-catalogo {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, 30em);
+  }
 }
-
-.dieciseis {
-  grid-area: dieciseis;
+@media screen and (max-width: 576px) {
+  .container-catalogo {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(12, 30em);
+  }
 }
-
-/* Fin Catalogo */
 /* Sobre nosotros */
 .somos-container {
   width: 80%;
@@ -277,69 +334,31 @@
   padding: 10px;
 }
 
-/* Media Queries*/
-@media only screen and (max-width: 1200px) {
-  .somos-container {
-    width: 90%;
-    grid-template-columns: repeat(4, 1fr);
-  }
-  .somos-img {
-    width: 50%;
-    height: 50%;
-  }
-  .somos-container > .images-somos {
-    grid-column: span 2;
-  }
-  .somos-content {
-    grid-column: span 2;
-  }
-}
-@media only screen and (max-width: 900px) {
-  .somos-container {
-    grid-template-columns: repeat(3, 1fr);
-  }
-  .somos-img {
-    width: 60%;
-    height: 60%;
-  }
-  .somos-container > .images-somos {
-    grid-column: span 3;
-  }
-  .somos-content {
-    grid-column: span 3;
-  }
-}
-@media only screen and (max-width: 600px) {
-  .somos-container {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .somos-img {
-    width: 80%;
-    height: 80%;
-  }
-  .somos-container > .images-somos {
-    grid-column: span 2;
-  }
-  .somos-content {
-    grid-column: span 2;
-  }
-}
-@media only screen and (max-width: 400px) {
+/* Media queries */
+@media (max-width: 768px) {
   .somos-container {
     grid-template-columns: 1fr;
   }
-  .somos-img {
-    width: 100%;
-    height: 100%;
+  .somos-container > .somos-content {
+    grid-column: auto;
   }
   .somos-container > .images-somos {
-    grid-column: span 1;
+    grid-column: auto;
   }
-  .somos-content {
-    grid-column: span 1;
+  .somos-img,
+  .somos-map {
+    width: 100%;
   }
 }
-/* fin sobre nosotros */
+@media (max-width: 576px) {
+  .somos-container {
+    width: 90%;
+  }
+  .somos-container > .somos-content,
+  .somos-container > .images-somos {
+    margin: 2em 0;
+  }
+}
 .form-register {
   width: 500px;
   height: 600px;
@@ -395,6 +414,54 @@
   font-size: 16px;
 }
 
+@media screen and (max-width: 768px) {
+  header {
+    padding: 1em;
+  }
+  .form-register {
+    max-width: 400px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 20px;
+  }
+  .controls {
+    height: 40px;
+    font-size: 16px;
+  }
+  .form-register h4 {
+    font-size: 20px;
+  }
+  .form-register p {
+    font-size: 16px;
+  }
+  .form-register .botons {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 480px) {
+  header {
+    padding: 0.5em;
+  }
+  .form-register {
+    max-width: 300px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 15px;
+  }
+  .controls {
+    height: 35px;
+    font-size: 14px;
+  }
+  .form-register h4 {
+    font-size: 18px;
+  }
+  .form-register p {
+    font-size: 14px;
+  }
+  .form-register .botons {
+    font-size: 12px;
+  }
+}
 .contacto-container {
   min-height: 100vh;
   display: flex;
@@ -470,16 +537,35 @@ input::placeholder, textarea::placeholder {
   background-color: #50E04B;
 }
 
-@media (max-width: 991px) {
-  body {
+/* Media queries */
+@media (max-width: 767px) {
+  form {
+    width: 100%;
+    max-width: 400px;
+  }
+}
+@media (max-width: 576px) {
+  form {
     padding: 30px;
   }
+}
+@media (max-width: 400px) {
   form {
-    padding: 50px 30px;
-    width: 100%;
+    padding: 20px;
   }
-  .put {
-    padding: 15px;
+  .title-contacto {
+    font-size: 30px;
+  }
+  label {
+    font-size: 14px;
+  }
+  input,
+  textarea {
+    padding: 15px 20px;
+    font-size: 14px;
+  }
+  .btn {
+    font-size: 14px;
   }
 }
 header {

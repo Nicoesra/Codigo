@@ -55,3 +55,64 @@
     font-size: 16px;
 
 }
+
+
+@media screen and (max-width: 768px) {
+    header {
+        padding: 1em;
+    }
+
+    .form-register {
+        max-width: 400px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        padding: 20px;
+    }
+
+    .controls {
+        height: 40px;
+        font-size: 16px;
+    }
+
+    .form-register h4 {
+        font-size: 20px;
+    }
+
+    .form-register p {
+        font-size: 16px;
+    }
+
+    .form-register .botons {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header {
+        padding: 0.5em;
+    }
+
+    .form-register {
+        max-width: 300px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        padding: 15px;
+    }
+
+    .controls {
+        height: 35px;
+        font-size: 14px;
+    }
+
+    .form-register h4 {
+        font-size: 18px;
+    }
+
+    .form-register p {
+        font-size: 14px;
+    }
+
+    .form-register .botons {
+        font-size: 12px;
+    }
+}
