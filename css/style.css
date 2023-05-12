@@ -57,10 +57,6 @@
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-.price {
-  margin: 20px;
-}
-
 .primero {
   grid-area: uno;
 }
@@ -511,6 +507,21 @@ nav ul {
 footer {
   background-color: lightslategray;
   padding: 2em 0;
+}
+
+.price {
+  margin: 20px;
+  font-size: 10px;
+  font-weight: 900;
+}
+
+.boton button {
+  border: none;
+  background: none;
+  background-color: rgba(0, 0, 0, 0);
+  color: #fff;
+  padding: 15px 10px;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=style.css.map */
