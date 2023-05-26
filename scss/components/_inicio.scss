@@ -1,5 +1,3 @@
-
-
 /* Index */
 .d-item {
     height: 600px;
@@ -8,7 +6,7 @@
 .d-img {
     height: 100%;
     object-fit: cover;
-    
+
 }
 
 .carousel-caption {
@@ -25,17 +23,18 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 500px);
-    
-    
-    grid-template-areas: 
-    'uno dos tres'
-    'cuatro cinco seis'
+
+
+    grid-template-areas:
+        'uno dos tres'
+        'cuatro cinco seis'
     ;
 }
 
 .items-promociones img {
     height: 300px;
     transition: all .5s;
+    width: 100%;
 }
 
 .items-promociones figure {
@@ -47,7 +46,7 @@
 }
 
 
-.items-promociones{
+.items-promociones {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -60,35 +59,35 @@
 .items-promociones:hover {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
 }
-    
+
 .primero {
     grid-area: uno;
-    
+
 }
 
 .segundo {
     grid-area: dos;
-    
+
 }
 
 .tercero {
     grid-area: tres;
-    
+
 }
 
 .cuarto {
     grid-area: cuatro;
-    
+
 }
 
 .quinto {
     grid-area: cinco;
-    
+
 }
 
 .sexto {
     grid-area: seis;
-    
+
 }
 
 .title-promociones {
@@ -97,6 +96,20 @@
     background-color: lightslategray;
     color: black;
     margin-top: 1em;
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .container-promociones {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 500px);
+        grid-template-areas:
+            'uno dos'
+            'tres cuatro'
+            'cinco seis'
+        ;
+    }
 }
 
 

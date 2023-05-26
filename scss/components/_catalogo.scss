@@ -1,136 +1,126 @@
-
 /* Catalogo */
+
 .title-catalogo {
-    display: flex;
-    justify-content: center;
-    margin-top: 1em;
-  }
-  
-  .container-catalogo {
-      width: 100%;
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      grid-template-rows: repeat(3, 30em);
-      
-      
-      grid-template-areas: 
-      'uno dos tres cuatro'
-      'cinco seis siete ocho'
-      'nueve diez once doce'
-      ;
-  }
-  
-  .items-catalogo{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      flex-wrap: wrap;
-      margin: 5px;
-      border-radius: 10px;
-  }
-
-  .items-catalogo img {
-    height: 300px;
-    transition: all .5s;
-  }
-
-  .items-catalogo figure {
-    overflow: hidden;
-  }
-
-  .items-catalogo:hover {
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20)
-  }
-  
-  .items-catalogo:hover img {
-    transform: scale(1.1);
-  }
-
-  .items-catalogo {
-      margin: 1em;
-  }
-
-  .uno {
-      grid-area: uno;
-      
-  }
-  
-  .dos {
-      grid-area: dos;
-      
-  }
-  
-  .tres {
-      grid-area: tres;
-     
-  }
-  
-  .cuatro {
-      grid-area: cuatro;
-      
-  }
-  
-  .cinco {
-      grid-area: cinco;
-      
-  }
-  
-  .seis {
-      grid-area: seis;
-      
-  }
-  
-  .siete {
-    grid-area: siete;
-  }
-  
-  .ocho {
-    grid-area: ocho;
-  }
-  
-  .nueve {
-    grid-area: nueve;
-  }
-  
-  .diez {
-    grid-area: diez;
-  }
-  
-  .once {
-    grid-area: once;
-  }
-  
-  .doce {
-    grid-area: doce;
-  }
-  
-  @media screen and (max-width: 768px) {
-    .container-catalogo {
-      grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: repeat(4, 30em);
-    }
-  }
-
-  
-@media screen and (max-width: 1200px) {
-  .container-catalogo {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, 30em);
-  }
+  display: flex;
+  justify-content: center;
+  margin-top: 1em;
 }
 
-@media screen and (max-width: 992px) {
+.container-catalogo {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 30em);
+
+
+  grid-template-areas:
+    'uno dos tres cuatro'
+    'cinco seis siete ocho'
+    'nueve diez once doce'
+  ;
+
+}
+
+.items-catalogo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 5px;
+  border-radius: 10px;
+
+}
+
+.items-catalogo img {
+  height: 300px;
+  transition: all .5s;
+  width: 100%;
+}
+
+.items-catalogo figure {
+  overflow: hidden;
+}
+
+.items-catalogo:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20)
+}
+
+.items-catalogo:hover img {
+  transform: scale(1.1);
+}
+
+.items-catalogo {
+  margin: 1em;
+}
+
+.uno {
+  grid-area: uno;
+
+}
+
+.dos {
+  grid-area: dos;
+
+}
+
+.tres {
+  grid-area: tres;
+
+}
+
+.cuatro {
+  grid-area: cuatro;
+
+}
+
+.cinco {
+  grid-area: cinco;
+
+}
+
+.seis {
+  grid-area: seis;
+
+}
+
+.siete {
+  grid-area: siete;
+}
+
+.ocho {
+  grid-area: ocho;
+}
+
+.nueve {
+  grid-area: nueve;
+}
+
+.diez {
+  grid-area: diez;
+}
+
+.once {
+  grid-area: once;
+}
+
+.doce {
+  grid-area: doce;
+}
+
+
+@media screen and (max-width: 768px) {
   .container-catalogo {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(6, 30em);
+    grid-template-areas:
+      'uno dos'
+      'tres cuatro'
+      'cinco seis'
+      'siete ocho'
+      'nueve diez'
+      'once doce'
+    ;
   }
-}
 
-@media screen and (max-width: 576px) {
-  .container-catalogo {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(12, 30em);
-  }
 }
-  
