@@ -108,7 +108,7 @@
   grid-area: doce;
 }
 
-
+/* media query */
 @media screen and (max-width: 768px) {
   .container-catalogo {
     grid-template-columns: repeat(2, 1fr);
